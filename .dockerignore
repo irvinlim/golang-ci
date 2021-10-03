@@ -1,0 +1,9 @@
+.env
+.git
+.gitignore
+.idea
+
+Makefile
+Dockerfile
+.dockerignore
+README.md
