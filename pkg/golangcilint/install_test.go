@@ -48,7 +48,7 @@ func TestInstallGolangCILintVersion(t *testing.T) {
 		defer wg.Done()
 		bytes, err := ioutil.ReadAll(stdout)
 		if err != nil {
-			t.Fatal(err)
+			t.Errorf("cannot read stdout: %v", err)
 		}
 		stdoutString = string(bytes)
 	}()
